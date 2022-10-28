@@ -27,15 +27,15 @@ async def upgrade(bot,update):
 	Daily Upload limit 1OGB
 	Price Rs 35  🇮🇳/🌎 0.42$  per Month
 	
-	**VIP3**
+	**VIP 03**
 	Daily Upload limit 30GB
 	Price Rs 50  🇮🇳/🌎 0.61$  per Month
 	
-	**VIP4**
+	**VIP 04**
 	Daily Upload limit 50GB
 	Price Rs 75 🇮🇳/🌎 0.91$  per Month
 	
-	**VIP**
+	**VIP 05**
 	Daily Upload limit 100GB 
 	Price Rs 110 🇮🇳/🌎 1.33$  per Month
 	
