@@ -34,27 +34,21 @@ async def start(client,message):
 	try:
 	    id = message.text.split(' ')[1]
 	except:
-	    await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""",reply_to_message_id = message.id ,  
+	    await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
+	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
 	    return
 	if id:
 	    if old == True:
 	        try:
 	            await client.send_message(id,"Your Frind Alredy Using Our Bot")
-	            await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""",reply_to_message_id = message.id ,  
+	            await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
+	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
 	        except:
 	             return
 	    else:
@@ -63,15 +57,11 @@ async def start(client,message):
 	         limit = _user_["uploadlimit"]
 	         new_limit = limit + 104857600
 	         uploadlimit(int(id),new_limit)
-	         await message.reply_text(text =f"""
-	Hello {wish} {message.from_user.first_name }
-	__I am file renamer bot, Please sent any telegram 
-	**Document Or Video** and enter new filename to rename it__
-	""",reply_to_message_id = message.id ,  
+	         await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
+	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]))
-	         
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
 
 
 
@@ -86,7 +76,7 @@ async def send_doc(client,message):
        		await message.reply_text("**__You are not subscribed my channel__** ",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("🔔 Updates Channel" ,url=f"https://t.me/{update_channel}") ]   ]))
        		return
        
        
@@ -152,5 +142,5 @@ async def send_doc(client,message):
        		    filesize = humanize.naturalsize(file.file_size)
        		    fileid = file.file_id
        		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
-       		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
+       		[[ InlineKeyboardButton("✍️ Rename",callback_data = "rename"),
        		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
