@@ -87,15 +87,12 @@ async def upgradecm(bot,message):
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
-	buttons = InlineKeyboardMarkup(
-                     [[ InlineKeyboardButton("🤴 Admin", url = "https://t.me/hellodarklord21")
-                        ],[
-                        InlineKeyboardButton("PayPal 🌎", url = "soon"),
-                        InlineKeyboardButton("💰 Paytm", url = "soon")
-                        ],[
-                        InlineKeyboardButton("Cancel ✖️", callback_data = "cancel"),  
-                       ]]
-                      )
-	await upgrade.message.edit(text = text, reply_markup = buttons)
-
-
+	buttons = [[ 
+            InlineKeyboardButton("🤴 Admin", url = "https://t.me/hellodarklord21")
+            ],[
+            InlineKeyboardButton("PayPal 🌎", url = "soon"),
+            InlineKeyboardButton("💰 Paytm", url = "soon")
+            ],[
+            InlineKeyboardButton("Cancel ✖️", callback_data = "cancel"),  
+            ]])
+	await upgrade.message.edit(text = text, InlineKeyboardMarkup(buttons))
