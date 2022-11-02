@@ -7,7 +7,6 @@ async def upgrade(bot,update):
 	text = """**Free Plan User**
 	Daily Upload limit 2GB
 	Price 0
-	
 	_____________________________
 	**Only Upgrade Upload Limit
 	Not Support 4GB file Rename**
@@ -15,7 +14,6 @@ async def upgrade(bot,update):
 	10GB - 10rs 
 	50GB -  30rs 
 	100GB - 50rs 
-	
 	_____________________________
 	**It's Support 4GB File Rename**
 
@@ -89,10 +87,15 @@ async def upgradecm(bot,message):
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
-	buttons = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("🤴 Admin", url = "https://t.me/hellodarklord21")], 
-        			[InlineKeyboardButton("PayPal 🌎", url = "soon"),
-        			InlineKeyboardButton("💰 Paytm", url = "soon")],[InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")  ]])
+	buttons = InlineKeyboardMarkup(
+                     [[ InlineKeyboardButton("🤴 Admin", url = "https://t.me/hellodarklord21")
+                        ],[
+                        InlineKeyboardButton("PayPal 🌎", url = "soon"),
+                        InlineKeyboardButton("💰 Paytm", url = "soon")
+                        ],[
+                        InlineKeyboardButton("Cancel ✖️", callback_data = "cancel"),  
+                       ]]
+                      )
 	await upgrade.message.edit(text = text, reply_markup = buttons)
 
 
