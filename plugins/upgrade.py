@@ -87,8 +87,8 @@ async def upgradecm(bot,message):
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
-        keybord = InlineKeyboardMarkup([[ 
+        keyboard = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Admin 🤴", url = "https://t.me/hellobikashmaity")], 
         			[InlineKeyboardButton("PayPal 🌎", url = "https://www.paypal.me/hellobikashmaity"),
-        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],[InlineKeyboardButton("Cancel", callback_data = "cancel ✖️")  ]])
-	await message.reply_text(text = text,reply_markup = keybord)
+        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],[InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")  ]])
+	await message.reply_text(text = text, reply_markup = keyboard)
