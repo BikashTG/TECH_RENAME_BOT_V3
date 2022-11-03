@@ -10,7 +10,7 @@ async def upgrade(bot,update):
 	_____________________________
 	**Only Upgrade Upload Limit
 	Not Support 4GB file Rename**
-	
+
 	10GB - 10rs 
 	50GB -  30rs 
 	100GB - 50rs 
@@ -43,7 +43,8 @@ async def upgrade(bot,update):
         keyboard = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Admin 🤴", url = "https://t.me/hellobikashmaity")], 
         			[InlineKeyboardButton("PayPal 🌎", url = "https://www.paypal.me/hellobikashmaity"),
-        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],[InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")  ]])
+        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],
+                                [InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")]])
 	await message.reply_text(text = text, reply_markup = keyboard)
 
 @Client.on_message(filters.private & filters.command(["upgrade"]))
@@ -87,5 +88,6 @@ async def upgradecm(bot,message):
         keyboard = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Admin 🤴", url = "https://t.me/hellobikashmaity")], 
         			[InlineKeyboardButton("PayPal 🌎", url = "https://www.paypal.me/hellobikashmaity"),
-        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],[InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")  ]])
+        			InlineKeyboardButton("💰 Paytm", url = "https://p.paytm.me/xCTH/hellobikashmaity")],
+                                [InlineKeyboardButton("Cancel ✖️", callback_data = "cancel")]])
 	await message.reply_text(text = text, reply_markup = keyboard)
