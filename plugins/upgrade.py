@@ -39,8 +39,7 @@ async def upgrade(bot,update):
 	
 	Pay Using Upi I'd 📲 joynathnet4@oksbi 
 	
-	After Payment Send Screenshots Of 
-        Payment To Admin"""
+	☑️ After Payment Send Screenshots Of Payment To Admin"""
         keyboard = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Admin 🤴", url = "https://t.me/hellobikashmaity")], 
         			[InlineKeyboardButton("PayPal 🌎", url = "https://www.paypal.me/hellobikashmaity"),
