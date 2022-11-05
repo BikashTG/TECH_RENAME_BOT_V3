@@ -136,11 +136,11 @@ async def send_doc(client,message):
        		        else:
        		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
        		    else:
-       		          	await message.reply_text("Can't upload files bigger than 2GB ")
+       		          	await message.reply_text("Can't upload files bigger than 2GB")
        		          	return
        		else:
        		    filesize = humanize.naturalsize(file.file_size)
        		    fileid = file.file_id
        		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
-       		[[ InlineKeyboardButton("✍️ Rename",callback_data = "rename"),
-       		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
+       		[[ InlineKeyboardButton("✎ Rename",callback_data = "rename"),
+       		InlineKeyboardButton("✖ Cancel",callback_data = "cancel")  ]]))
