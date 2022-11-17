@@ -37,8 +37,8 @@ async def start(client,message):
 	    await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
 	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
-	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/+eLB5a6LWmdRmOWQx") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2018") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -47,8 +47,8 @@ async def start(client,message):
 	            await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
 	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
-	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/+eLB5a6LWmdRmOWQx") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2018") ]  ]))
 	        except:
 	             return
 	    else:
@@ -60,8 +60,8 @@ async def start(client,message):
 	         await message.reply_text(text =f"""<b><i>Hello 👋 {message.from_user.first_name},\n\nI Am File Renamer Bot, Sent Me Any Telegram File Or Video And Enter New Filename To Rename It.</b></i>""",
 	reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/TechProjectsChat") ], 
-	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2019") ]  ]))
+	 [[ InlineKeyboardButton("🔗 Support", url="https://t.me/+eLB5a6LWmdRmOWQx") ], 
+	[InlineKeyboardButton("🔔 Channel", url="https://t.me/Tech_Projects2018") ]  ]))
 
 
 
